@@ -1,0 +1,95 @@
+/* ================= GLOBAL ================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    background-color: #000000; /* BLACK BACKGROUND */
+    color: white;
+}
+
+/* ================= APP ================= */
+
+.App-header {
+    background-color: #000000; /* BLACK */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+/* ================= LOGO ================= */
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ================= LINKS ================= */
+
+.App-link {
+    color: #18be42; /* GREEN ACCENT */
+    font-weight: 500;
+}
+
+.App-link:hover {
+    color: #5cff8d; /* LIGHT GREEN */
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000; /* BLACK */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #18be42; /* GREEN */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5cff8d; /* LIGHT GREEN */
+}
+
+/* ================= TEXT SELECTION ================= */
+
+::selection {
+    background: rgba(24, 190, 66, 0.4); /* GREEN SELECTION */
+    color: white;
+}
+
+/* ================= UTILITIES ================= */
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
